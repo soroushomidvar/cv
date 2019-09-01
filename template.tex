@@ -1,0 +1,282 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+\newcommand{\comment}[1]{}
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{black}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\usepackage[super]{nth}
+\usepackage{fontawesome}
+\providecommand\faSkype{{\FA\symbol{"F17E}}}
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\usepackage[scale=0.8,top=2cm]{geometry}
+
+
+
+
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Soroush}{Omidvar Tehrani}
+%\title{MSEE Application and Instrumentation}                               % optional, remove / comment the line if not wanted
+%{No. 21, Moallem 34 St., Moallem Blvd.}
+%\address{Mashhad}{Iran}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+%\phone[mobile]{+98~915~125~59~91}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+%\email{soroush.mid@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{sesh.ir}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{soroushomidvar}                        % optional, remove / comment the line if not wanted
+\extrainfo{\faSkype\ soroush.mid}
+%\social[twitter]{soroush.mid}                             % optional, remove / comment the line if not wanted
+%\skype{soroush.mid}
+
+\social[github]{soroushomidvar}                              % optional, remove / comment the line if not wanted
+
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+
+
+
+
+\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the 
+
+
+
+
+
+%picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Best way to predict the future is to create it.}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+
+\makeatother
+
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\renewcommand*{\namefont}{\fontsize{37}{37}\mdseries\upshape}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+
+%\vspace*{-10mm}
+
+
+\makecvtitle
+
+
+\vspace*{-10mm}
+
+\section{Personal Data}
+\cvitem{Birth Place}{Mashhad, Khorasan Razavi Province, Iran} % arguments 3 to 6 can be left empty
+\cvitem{Birth Date}{10 April 1995}
+\cvitem{Email}{\href{mailto:soroush.mid@gmail.com}{soroush.mid@gmail.com} | \href{mailto:omidvar@mail.um.ac.ir}{omidvar@mail.um.ac.ir} }
+\cvitem{Phone}{\href{tel:+989151255991}{+98 9151255991}}
+
+\section{Education}
+%\cventry{2017--2019}{Master of Engineering}{}{Ferdowsi University of Mashhad, Iran}{{Computer Engineering, Network}}{}  % arguments 3 to 6 can be left empty
+\cventry{2017--2019}{M.Sc. in Computer Engineering (Network branch)}{Department of Computer Engineering}{Ferdowsi University of Mashhad, Iran}{}{}
+\cvitem{}{- Total GPA:	17.53/20}
+\cvitem{}{- Last year GPA: 18.53/20}
+
+\cventry{2013--2017}{B.Sc. in Computer Engineering (Hardware branch)}{Department of Computer Engineering}{Ferdowsi University of Mashhad, Iran}{}{}
+\cvitem{}{- Total GPA:	16.56/20}
+\cvitem{}{- Last 2 years GPA: 17.73/20}
+
+\section{Research Interests}
+\cvitem{}{\textbf{IoT-based Data Mining}}
+\cvitem{}{\textbf{Artificial Intelligence}}
+\cvitem{}{\textbf{IoT Security}}
+
+\section{Publications}
+\cvitem{2019}{Extracting Effective Features for Descriptive Analysis of Household Energy Consumption using Smart Home Data}
+%\cvitem{Abstract}{Household energy consumption has a large share of global energy consumption. To have a better understanding of energy generation, management and surplus storage, we need to discover implicit patterns of consumers’ behavior and identify the factors affecting their performance. The main goal of this paper is to descriptively analyze the pattern of household energy consumption using RECS2015 dataset. To this end, we focus on selecting the most effective subset of features from high dimensional dataset that leads to a better understanding of data, reducing computation time and improving prediction performance. The result of this study can help decision-makers to investigate the living conditions of families in different levels of society to ensure that their lifestyle is well enough or should be improved. }
+%\cite{moradi2019IOT}
+%\cvitem{}{\noindent\rule{131mm}{0.4pt}}
+%\cvitem{}{\noindent\rule{131mm}{0.4pt}}
+\cvitem{2019}{Analysis of electricity consumption in smart homes using time hierarchy}
+%\cvitem{Abstract}{Recognition of consumption patterns has an essential role in power management, and analysis of devices behavior is an integral part of that. Finding the usage patterns of household users, the main part of power usage, could significantly improve power prediction and power management. In this paper, the resemblance of devices consumption in a smart home is analyzed using time hierarchy. Finding relations between various devices and patterns of their usage is the aim of this analysis. This process led to the discovery of meaningful and precise patterns among the consumption of different devices.}
+% \cite{omidvar2019IOT}
+\cvitem{2018}{FUMBOT: Design, Implementation and Detectoin}
+%\cvitem{Abstract}{In recent years, different malware has been developed and become more and more sophisticated. Botnets are among newly-emerged malware which is primarily used to perform malicious activities and are an important threat for nowadays Internet users. Malware can be remotely controlled after their installation on the host, as the victim system is unable to ignore received commands. One of the characteristics of botnets is their hidden activity, which makes it difficult to detect their presence on the victim’s device. Botnets are generally used to perform numerous attacks such as spamming, Distributed Denial of Service -DDoS-, identity theft, etc. In this article, we present our FUMBOT botnet which a centralized botnet, able to perform DDoS attack and utilize the bots for extracting cryptocurrency. FUMBOT was implemented in Java and can evade typical intrusion detection schemes.}
+
+\section{Honors}
+\cvitem{2019}{Winner of the best paper award in the TopHPC (High Performance Computing and Big Data Analytics) congress}
+%\cvitem{2017}{Ranked in second place of B.Sc. grade average and M.Sc. entrance without university exam}
+\cvitem{2017}{Ranked \nth{2} in B.Sc. Computer Engineering grade average and M.Sc. entrance without university exam}
+
+\section{Master Thesis}
+\cvitem{Title}{\emph{Data-stream-based anomaly detection for smart meters in power grid}}
+\cvitem{Supervisor}{\href{http://profsite.um.ac.ir/~hyaghmae/}{Dr. Mohammad Hossein Yaghmaee Moghaddam}}
+\cvitem{Advisor}{\href{https://scholar.google.com/citations?user=DUjvIdQAAAAJ}{Dr. Mohsen Asadi}}
+\cvitem{Description}{One aspect of using IoT in smart homes is measuring the power consumption of the devices (using smart meters) and recognizing their usage patterns. Smart meters data could help decision-makers for power consumption management, and due to the large volume of data, big data and data mining methods should be used for their analysis. Decision making and anomaly detection based on received data Increase the need for online processing. The purpose of this project is implementing a system for the online processing of smart meters data and anomaly detection based on them. }
+
+\section{Teaching Experiences}
+%\subsection{Regular}
+\cventry{2015 - 2019}{The Theory of Formal Languages and Automata}{Teacher Assistant and Project Supervisor}{Department of Computer Engineering}{}{Dr. Abdorreza Savadi}
+%\cventry{Fall 2019}{Assistant in Computer Networks}{}{Ferdowsi University of Mashhad, Iran}{}{}
+\cventry{Spring 2017}{Artificial Intelligence}{Teacher Assistant and Project Supervisor}{Department of Computer Engineering}{}{Dr. Ahad Harati}
+\cventry{Fall 2016}{Fundamentals of Compiler Design}{Teacher Assistant and Project Supervisor}{Department of Computer Engineering}{}{Dr. Haleh Amintoosi}
+\cventry{Fall 2015}{Computer Aided Digital System Design}{Project Supervisor}{Department of Computer Engineering}{}{Dr. Mariam Zomorodi Moghadam}
+\cventry{Fall 2014}{Discrete Mathematics}{Teacher Assistant}{Department of Computer Engineering}{}{Dr. Mostafa Nouri Baygi}
+
+\section{Related Courses}
+\cvitem{}{Data Mining: 19.5/20}
+\cvitem{}{Artificial Intelligence: 19.1/20}
+\cvitem{}{Wireless Networking Basics: 19/20}
+\cvitem{}{Distributed Systems: 18.3/20}
+\cvitem{}{Advanced Computer Networks: 18/20}
+\cvitem{}{Computer Networks: 17.9/20}
+\cvitem{}{Secure Computer Systems: 20/20}
+
+
+\section{Programming}
+\cvitemwithcomment{Java}{Professional}{2013 - Present}
+\cvitemwithcomment{Matlab}{Intermediate}{2017 - Present}
+\cvitemwithcomment{Android}{Intermediate}{2015 - Present}
+\cvitemwithcomment{Antlr}{Intermediate}{2014 - Present}
+\cvitemwithcomment{Python}{Basic}{2018 - Present}
+\cvitemwithcomment{C++}{Basic}{2014}
+\subsection{Familiar with:}
+%\cvitemwithcomment{ }{Go, VHDL, Linux Shell Programming, ARM ST Microcontrollers, Markup Languages}{ }
+%\cventry{}{}{}{Go, VHDL, Linux Shell Programming, ARM ST Microcontrollers, Markup Languages}{}{}
+\cvitem{}{Go, VHDL, Linux Shell Programming, Markup Languages, ARM ST Microcontrollers}
+\section{Computer skills}
+%\subsection{Familiar with:}
+%\cvitemwithcomment{ }{LATEX, Git, Linux OS commandline, Microsoft Office, IntelliJ IDEA (and many of JetBrains products)}{ }
+\cvitem{}{LATEX, Git, Linux OS commandline (based on LPIC1), Microsoft Office, IntelliJ IDEA, PyCharm, Android Studio, ANTLRWorks,}
+
+\section{Memberships}
+\cvitem{2019}{IPPBX Lab, Department of Computer Engineering, Ferdowsi University of Mashhad.}
+\cvitem{2016 - 2019}{CCL Lab, Department of Computer Engineering, Ferdowsi University of Mashhad.}
+
+\section{Hobbies and Interests}
+\cvitem{}{Books, Movies and Music}
+\cvitem{}{Travelling}
+\cvitem{}{Astronomy}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\comment{
+\section{Co Curricular}
+\cventry{Workshop}{MATLAB based Image Processing}{by MagicMan Technologies}{Mumbai}{06-2012}{Design of MATLAB based line/object/gesture follower robot}
+
+\section{Extra Curricular}
+\cvlistitem{Hovercraft design competition finalist at kshitij-2011 (IIT Kharagpur).}
+\cvlistitem{Co-ordinator at EPICS-2011, G H R C E, Nagpur.}
+\cvlistitem{Represented R. K. College, Madhubani in inter college table-tennis tournament (L. N. M. University,
+Darbhanga, Bihar) 2006.}
+
+\section{References}
+\begin{cvcolumns}
+	\cvcolumn{IITM}{\begin{itemize}\item Dr. Anil P.\item Dr. Aniruddhan S.\item Dr. P.K.Behera\end{itemize}}
+	\cvcolumn{DU}{\begin{itemize}\item Dr. Md. Naimuddin, \item Dr. Ashok K.\end{itemize}}
+	\cvcolumn[0.4]{All the rest \& some more}{\textit{Dr. S.B.Bodke (GHRCE)}, and \textit{Dr. Satyanarayna B. (TIFR)} }
+\end{cvcolumns}
+
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\cvitem{2017-2019}{A member of Exeptional Talents in B.Sc. FUM}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+
+
+
+%\renewcommand{\refname}{}
+%\nocite{*}
+%\bibliographystyle{unsrt}
+%\bibliography{publications}                      % 'publications' is the name of a BibTeX file
+
+
+
+
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+% \recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+% \date{January 01, 1984}
+% \opening{Dear Sir or Madam,}
+% \closing{Yours faithfully,}
+% \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+% \makelettertitle
+
+% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+% Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+% Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+% Albert Einstein discovered that $e=mc^2$ in 1905.
+
+%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+% \makeletterclosing
+
+% %\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+
+
+
+
+\section{References}
+\cvitem{} {\href{http://profsite.um.ac.ir/~hyaghmae/}{\textbf{Dr. Mohammad Hossein Yaghmaee Moghaddam}}}
+\cvitem{} {Emails: \href{mailto:hyaghmae@ferdowsi.um.ac.ir}{hyaghmae@ferdowsi.um.ac.ir} | \href{mailto:yaghmaee@ieee.org}{yaghmaee@ieee.org} }
+%\cvitem{}{\noindent\rule{131mm}{0.4pt}}
+
+\cvitem{} {\href{http://amintoosi.profcms.um.ac.ir}{\textbf{Dr. Haleh Amintoosi}}}
+\cvitem{} {Emails: \href{mailto:amintoosi@um.ac.ir}{amintoosi@um.ac.ir} | \href{mailto:h.amintoosi@gmail.com}{h.amintoosi@gmail.com} }
+%\cvitem{}{\noindent\rule{131mm}{0.4pt}}
+
+\cvitem{} {\href{http://behkamal.profcms.um.ac.ir}{\textbf{Dr. Behshid Behkamal}}}
+\cvitem{} {Email: \href{mailto:behkamal@um.ac.ir}{behkamal@um.ac.ir}}
+%\cvitem{}{\noindent\rule{131mm}{0.4pt}}
+
+%\cvitem{} {\textbf{Dr. Mohsen Asadi}}
+%\cvitem{} {Emails: \href{mailto:mohsen.asadi@um.ac.ir}{mohsen.asadi@um.ac.ir} | %\href{mailto:mohsen.asadi62@gmail.com}{mohsen.asadi62@gmail.com}}
+%\cvitem{}{\noindent\rule{131mm}{0.4pt}}
+
+
+\end{document}
+
+
+%% end of file `template.tex'.
