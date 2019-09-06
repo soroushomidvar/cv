@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.8.26)  6 SEP 2019 12:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.8.26)  6 SEP 2019 14:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -701,11 +701,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(59.74988pt, 478.00812pt, 59.74988pt)
-* v-part:(T,H,B)=(56.9055pt, 702.78308pt, 85.35826pt)
+* v-part:(T,H,B)=(56.9055pt, 717.00946pt, 71.13188pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=478.00812pt
-* \textheight=702.78308pt
+* \textheight=717.00946pt
 * \oddsidemargin=-12.52011pt
 * \evensidemargin=-12.52011pt
 * \topmargin=-52.36449pt
@@ -752,7 +752,7 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 File: picture.png Graphic file (type png)
 <use picture.png>
 Package pdftex.def Info: picture.png  used on input line 70.
-(pdftex.def)             Requested size: 64.0pt x 76.00612pt.
+(pdftex.def)             Requested size: 60.0pt x 71.2588pt.
 \makecvheadpicturewidth=\skip86
 \makecvheadnamebox=\box51
 
@@ -818,11 +818,11 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 7FB1551A357767093730825623A6FB1A;1802.
  ) 
 Here is how much of TeX's memory you used:
- 21645 strings out of 492649
- 369270 string characters out of 6129622
- 467374 words of memory out of 5000000
+ 21649 strings out of 492649
+ 369316 string characters out of 6129622
+ 468378 words of memory out of 5000000
  25281 multiletter control sequences out of 15000+600000
- 578260 words of font info for 73 fonts, out of 8000000 for 9000
+ 578462 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,13n,45p,10360b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
@@ -836,7 +836,7 @@ xlive/2018/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2018/texmf-dist
 /fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
 ype1/public/lm/lmsso10.pfb>
-Output written on template.pdf (3 pages, 1592248 bytes).
+Output written on template.pdf (3 pages, 1595183 bytes).
 PDF statistics:
  149 PDF objects out of 1000 (max. 8388607)
  132 compressed objects within 2 object streams
