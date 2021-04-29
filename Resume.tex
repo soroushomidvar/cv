@@ -1,0 +1,313 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+\newcommand{\comment}[1]{}
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\usepackage{fontawesome}
+\usepackage{multicol}
+\usepackage{vwcol} 
+
+
+\usepackage{tikz}
+\newcommand{\grade}[1]{%
+	\begin{tikzpicture}
+		\clip (1em-.3em,-.3em) rectangle (5em +.5em ,.3em);
+		\begin{scope}
+			\clip (1em-.3em,-.3em) rectangle (#1em +.5em ,.3em);
+			\foreach \x in {1,2,...,5}{
+				\path[fill=black] (\x em,0) circle (.25em);
+			}
+		\end{scope}
+		\foreach \x in {1,2,...,5}{
+			\draw (\x em,0) circle (.25em);
+		}
+	\end{tikzpicture}%
+}
+
+
+
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{black}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+%\pagenumbering{num_style}
+
+\usepackage[super]{nth}
+
+\providecommand\faSkype{{\FA\symbol{"F17E}}}
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+%\usepackage[scale=0.80,top=2cm,bottom=25mm]{geometry}
+%\usepackage[scale=0.8,top=2cm]{geometry}
+%\usepackage[top=1cm, bottom=1cm, left=1cm, right=1cm]{geometry}
+%\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+%\usepackage[scale=0.80,top=15mm,bottom=15mm]{geometry} %best
+\usepackage[scale=0.90,top=8mm,bottom=8mm]{geometry}
+
+\setlength{\hintscolumnwidth}{1.7cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Soroush}{Omidvar Tehrani \hspace*{70pt}}
+%\title{MSEE Application and Instrumentation}                               % optional, remove / comment the line if not wanted
+%{No. 21, Moallem 34 St., Moallem Blvd.}
+%\address{Mashhad}{Iran}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+%\phone[mobile]{+98~915~125~59~91}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+%\email{soroush.mid@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{sesh.ir}                         % optional, remove / comment the line if not wanted
+%\social[linkedin]{soroushomidvar}                        % optional, remove / comment the line if not wanted
+%\extrainfo{\faSkype\ soroush.mid}
+
+%\extrainfo{\faGitlab\ soroush.mid}
+%\social[twitter]{soroush.mid}                             % optional, remove / comment the line if not wanted
+%\skype{soroush.mid}
+
+%\social[github]{soroushomidvar}                              % optional, remove / comment the line if not wanted
+
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+
+%\photo[60pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the 
+
+%picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Best way to predict the future is to create it.}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+
+\makeatother
+
+\begin{document}
+\renewcommand*{\namefont}{\fontsize{37}{37}\mdseries\upshape}
+\makecvtitle
+
+
+
+\vspace*{-10mm}
+
+%\section{\faUser \ Personal Data}
+\setlength{\columnsep}{+2cm}
+\begin{multicols}{2}
+	\cvitem{Email}{\href{mailto:soroush.mid@gmail.com}{soroush.mid@gmail.com} | \href{mailto:omidvar@mail.um.ac.ir}{omidvar@mail.um.ac.ir} }
+	\cvitem{Social}{\href{live:soroush.mid}{\faSkype \ soroush.mid}
+		\href{https://gitlab.com/soroush.mid}{\faGitlab \ soroush.mid}
+		%\href{https://github.com/soroushomidvar}{\faGithub \ soroushomidvar}
+		\href{https://www.linkedin.com/in/soroushomidvar}{\faLinkedin \ soroushomidvar}
+	}
+	%\cvitem{Birth Place}{Mashhad, Khorasan Province, Iran} 
+	%\cvitem{Birth Date}{10 April 1995}
+	\cvitem{Birth}{10 April 1995 - Mashhad,  Iran} 
+	\cvitem{Website}{\href{http://sesh.ir}{sesh.ir}}
+	%\cvitem{Phone}{\href{tel:+989151255991}{+98 9151255991}}
+\end{multicols}
+
+
+\vspace{2pt}
+\hrule
+\vspace{2pt}
+				 
+
+\section{Education}
+% arguments 3 to 6 can be left empty
+\cventry{2017--2020}{M.Sc. in Computer Engineering (Network branch)}{Department of Computer Engineering}{Ferdowsi University of Mashhad, Iran}{}{}
+\setlength{\columnsep}{-1cm}
+\begin{multicols}{2}
+\cvitem{}{- Total GPA:	17.53/20 (3.77/4)  $\rightarrow$ Ranked \nth{3} } 
+\cvitem{}{- Last year GPA: 18.53/20 (4/4)}
+\end{multicols}
+\cventry{2013--2017}{B.Sc. in Computer Engineering}{Department of Computer Engineering}{Ferdowsi University of Mashhad, Iran}{}{} % (Hardware branch)
+\setlength{\columnsep}{-1cm}
+\begin{multicols}{2}
+\cvitem{}{- Total GPA:	16.56/20 (3.29/4) $\rightarrow$ Ranked \nth{2} } %\faArrowRight
+\cvitem{}{- Last 2 years GPA: 17.73/20 (3.69/4)}
+\end{multicols}
+\section{Research Interests}
+\cvitem{}{\textbf{Machine Learning} | \textbf{IoT-based Data Mining} | \textbf{Distributed Systems} }
+%\cvitem{}{\textbf{Artificial Intelligence}}
+%\cvitem{}{\textbf{IoT Security}}
+
+\section{Publications}
+\cvitem{2021}{\textbf{Filter Based Time-Series Anomaly Detection in AMI using AI Approaches}, Alireza Rahimi, Afshin Shahrestani, Sina Ramezani, Pedram Zamani, \textit{Soroush Omidvar Tehrani}, Mohammad Hossein Yaghmaee Moghaddam, Mohsen Asadi, \nth{5} International Conference on Internet of Things and Applications (IoT 2021), held in Isfahan, Iran}
+
+\cvitem{2020}{\textbf{Decision Tree based Electricity Theft Detection in Smart Grid}, \textit{Soroush Omidvar Tehrani}, Mohammad Hossein Yaghmaee Moghaddam, Mohsen Asadi, \nth{4} International Conference on Internet of Things and Applications, held in Mashhad, Iran}
+
+
+\cvitem{2019}{\textbf{Extracting Effective Features for Descriptive Analysis of Household Energy Consumption using Smart Home Data},Hadise Moradi, \textit{Soroush Omidvar Tehrani}, Behshid Behkamal, Haleh Amintoosi, High Performance Computing and Big Data Analytics Congress, held in Tehran, Iran}
+%\cvitem{Abstract}{Household energy consumption has a large share of global energy consumption. To have a better understanding of energy generation, management and surplus storage, we need to discover implicit patterns of consumers’ behavior and identify the factors affecting their performance. The main goal of this paper is to descriptively analyze the pattern of household energy consumption using RECS2015 dataset. To this end, we focus on selecting the most effective subset of features from high dimensional dataset that leads to a better understanding of data, reducing computation time and improving prediction performance. The result of this study can help decision-makers to investigate the living conditions of families in different levels of society to ensure that their lifestyle is well enough or should be improved. }
+%\cite{moradi2019IOT}
+%\cvitem{}{\noindent\rule{131mm}{0.4pt}}
+%\cvitem{}{\noindent\rule{131mm}{0.4pt}}
+\cvitem{2019}{\textbf{Analysis of electricity consumption in smart homes using time hierarchy} (in Persian), \textit{Soroush Omidvar Tehrani}, Hadise Moradi, Behshid Behkamal, Haleh Amintoosi,  \nth{3} International Conference on Internet of Things and Applications, held in Isfahan, Iran}
+%\cvitem{Abstract}{Recognition of consumption patterns has an essential role in power management, and analysis of devices behavior is an integral part of that. Finding the usage patterns of household users, the main part of power usage, could significantly improve power prediction and power management. In this paper, the resemblance of devices consumption in a smart home is analyzed using time hierarchy. Finding relations between various devices and patterns of their usage is the aim of this analysis. This process led to the discovery of meaningful and precise patterns among the consumption of different devices.}
+% \cite{omidvar2019IOT}
+\cvitem{2018}{\textbf{FUMBOT: Design, Implementation and Detection}, \textit{Soroush Omidvar Tehrani}, Haleh Amintoosi, \nth{9} OIC-CERT Annual Conference \& \nth{4} Conference on Cyberspace Security Incidents and Vulnerabilities, held in Shiraz, Iran}
+%\cvitem{Abstract}{In recent years, different malware has been developed and become more and more sophisticated. Botnets are among newly-emerged malware which is primarily used to perform malicious activities and are an important threat for nowadays Internet users. Malware can be remotely controlled after their installation on the host, as the victim system is unable to ignore received commands. One of the characteristics of botnets is their hidden activity, which makes it difficult to detect their presence on the victim’s device. Botnets are generally used to perform numerous attacks such as spamming, Distributed Denial of Service -DDoS-, identity theft, etc. In this article, we present our FUMBOT botnet which a centralized botnet, able to perform DDoS attack and utilize the bots for extracting cryptocurrency. FUMBOT was implemented in Java and can evade typical intrusion detection schemes.}
+
+\section{ Honors}
+%\cvitem{2017}{Ranked in second place of B.Sc. grade average and M.Sc. entrance without university exam}
+\cvitem{2020}{Ranked \nth{3} among M.Sc. Computer Engineering students} %graduated in the year 2020
+
+\cvitem{2019}{Winner of the best paper award in the High Performance Computing and Big Data Analytics (TopHPC) congress}
+
+\cvitem{2017}{Ranked \nth{2} among B.Sc. Computer Engineering students and got accepted for M.Sc. at Ferdowsi University without entrance qualification exam} % graduated in the year 2017
+
+\section{Master Thesis}
+\cvitem{Title}{\emph{Data-stream-based anomaly detection for smart meters in power grid}}
+\cvitem{Supervisor}{\href{http://profsite.um.ac.ir/~hyaghmae/}{Dr. Mohammad Hossein Yaghmaee Moghaddam}}
+\cvitem{Advisor}{\href{https://scholar.google.com/citations?user=DUjvIdQAAAAJ}{Dr. Mohsen Asadi}}
+\cvitem{Description}{One aspect of using IoT in smart homes is measuring the power consumption of the devices (using smart meters) and recognizing their usage patterns. Smart meters data could help decision-makers for power consumption management, and due to the large volume of data, big data and data mining methods should be used for their analysis. Decision making and anomaly detection based on received data Increase the need of online processing. In this project, the anomaly detection process is performed distributed and online based on the Spark data processing system. The main phases of this work are identifying the suspicious area, feature extraction, clustering users' data, and categorizing their consumption for each cluster. Related methods to the examination of power consumption network, statistical features, and machine learning algorithms have been used in this project, and the system performance has been evaluated with different measures.}
+
+\section{Selected Teaching Experiences}
+%\subsection{Regular}
+\cventry{2015--2020}{The Theory of Formal Languages and Automata}{Teacher Assistant and Project Supervisor}{Department of Computer Engineering}{}{Supervised by Dr. Abdorreza Savadi (2015-2020), Dr. Saeid Abrishami (2018,2019) }
+%\cventry{Fall 2019}{Assistant in Computer Networks}{}{Ferdowsi University of Mashhad, Iran}{}{}
+\cventry{2019--2020}{Computer Networking}{Teacher Assistant and Project Supervisor}{Department of Computer Engineering}{}{Supervised by: Eng. Farnad Ahangari}
+\cventry{2017}{Artificial Intelligence}{Teacher Assistant and Project Supervisor}{Department of Computer Engineering}{}{Supervised by: Dr. Ahad Harati}
+\cventry{2016}{Fundamentals of Compiler Design}{Teacher Assistant and Project Supervisor}{Department of Computer Engineering}{}{Supervised by: Dr. Haleh Amintoosi}
+\cventry{2015}{Digital System Design}{Project Supervisor}{Department of Computer Engineering}{}{Supervised by: Dr. Mariam Zomorodi Moghadam}
+\cventry{2014}{Discrete Mathematics}{Teacher Assistant}{Department of Computer Engineering}{}{Supervised by: Dr. Mostafa Nouri Baygi}
+
+
+\section{Related Courses}
+\setlength{\columnsep}{-2cm}
+\begin{multicols}{2}
+\cvitem{}{Data Mining: 19.5/20}
+\cvitem{}{Artificial Intelligence: 19.1/20}
+\cvitem{}{Basics of Wireless Networking: 19/20}
+\cvitem{}{Distributed Systems: 18.3/20}
+\cvitem{}{Advanced Computer Networks: 18/20}
+%\cvitem{}{Computer Networks: 17.9/20}
+\cvitem{}{Secure Computer Systems: 20/20}
+\end{multicols}
+
+%\section{Selected Academic Projects}
+\section{Selected Projects}
+\cvitem{2017--2019}{\textbf{Cryptocurrency mining and electricity theft detection}, Employer: Khorasan province electerical distribution company, Dr. Mohammad Hossein Yaghmaee Moghaddam, written with Spark, Python, php (Ongoing)}
+
+\cvitem{2017--2019}{\textbf{Design and implementation of power usage smart metering system and consumption management methods based on received data}, As a M.Sc. Project infrastructure, Dr. Mohammad Hossein Yaghmaee Moghaddam and IoT team of IPPBX Lab, written with Java, C, php}
+
+\cvitem{2019}{\textbf{Implementation of finding relations between electricity consumption of various devices and patterns of their usage}, Course: Data Mining , Dr. Behshid Behkamal, Dr. Haleh Amintoosi and Eng. Hadise Moradi, written with Matlab}
+
+\cvitem{2019}{\textbf{Performing feature selection using analysis the pattern of household energy consumption using RECS2015 dataset}, Course: Data Mining , Dr. Behshid Behkamal, Dr. Haleh Amintoosi and Eng. Hadise Moradi, written with R}
+
+\cvitem{2017}{\textbf{Design and implementation of laboratory botnet (FUMBOT) which a centralized botnet, able to perform DDoS attack and utilize the bots for extracting cryptocurrency}, B.Sc. Project, Dr. Haleh Amintoosi, written with Java}
+
+\cvitem{2016}{\textbf{Implementation of uninformed search algorithms (BDS, UCS, IDS, DFD, BFS) on Pac-Man game}, Course: Artificial Intelligence, Dr. Ahad Harati, written with Java}
+
+%\cvitem{2016}{\textbf{Implementation of Genetic Algorithm}, Course: Artificial Intelligence, Dr. Ahad Harati, written with Java}
+
+\cvitem{2016}{\textbf{Developing an Android program that searches between various news sites and sends related news based on your interest}, Course: Android Programming, Dr. Samad Paydar, written with Java}
+
+\cvitem{2015-2018}{\textbf{Implementing several language recognition programs based on ANTLR}, Course: The Theory of Formal Languages and Automata, Dr. Abdorreza Savadi, written with Antlr}
+
+
+\section{Programming and Computer Skills}
+\setlength{\columnsep}{+2cm}
+\begin{multicols}{2}
+%\cvitemwithcomment{Python}{Professional}{2018 - Present}
+%\cvitemwithcomment{Spark}{Professional}{2019 - Present}
+%\cvitemwithcomment{Java}{Professional}{2013 - Present}
+%\cvitemwithcomment{Matlab}{Intermediate}{2017 - Present}
+%\cvitemwithcomment{Android}{Intermediate}{2015 - 2019}
+%\cvitemwithcomment{Antlr}{Intermediate}{2014 - 2019}
+%\cvitemwithcomment{C++}{Basic}{2014}
+
+\cvitem{Python}{Professional, 2018 - Present} 
+\cvitem{Spark}{Professional, 2019 - Present} 
+\cvitem{Java}{Professional, 2013 - Present} 
+\cvitem{Matlab}{Intermediate, 2017 - Present} 
+\cvitem{Android}{Intermediate, 2015 - 2019} 
+\cvitem{Antlr}{Intermediate, 2014 - 2019} 
+\cvitem{C++}{Basic, 2014} 
+
+%\cvitem{Python}{\grade{5}, 2018 - Present} 
+%\cvitem{Spark}{\grade{4}, 2019 - Present} 
+%\cvitem{Java}{\grade{4}, 2013 - Present} 
+%\cvitem{Matlab}{\grade{3.5}, 2017 - Present} 
+%\cvitem{Android}{\grade{3.5}, 2015 - 2019} 
+%\cvitem{Antlr}{\grade{3}, 2014 - 2019} 
+%\cvitem{C++}{\grade{2}, 2014} 
+
+\end{multicols}
+
+\vspace*{-3mm}
+
+{\small
+\subsection{Familiar with:}}
+\cvitem{}{LATEX, Git, Linux commandline (based on LPIC1), Linux Shell Programming, Go, VHDL, Markup Languages, ARM ST Microcontrollers}
+
+%\section{Computer skills}
+%\cvitem{}{LATEX, Git, Linux OS commandline (based on LPIC1)}%, Microsoft Office, IntelliJ IDEA, PyCharm, Android Studio, ANTLRWorks}
+
+\section{Memberships}
+\cvitem{2019 - 2021}{IPPBX Lab, Department of Computer Engineering, Ferdowsi University of Mashhad.}
+\cvitem{2016 - 2019}{CCL Lab, Department of Computer Engineering, Ferdowsi University of Mashhad.}
+
+%\section{Hobbies and Interests}
+%\cvitem{}{Books, Movies and Music | Travelling | Astronomy}
+%\cvitem{}{Travelling}
+%\cvitem{}{Astronomy}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\comment{
+\section{Co Curricular}
+\cventry{Workshop}{MATLAB based Image Processing}{by MagicMan Technologies}{Mumbai}{06-2012}{Design of MATLAB based line/object/gesture follower robot}
+
+\section{Extra Curricular}
+\cvlistitem{Hovercraft design competition finalist at kshitij-2011 (IIT Kharagpur).}
+\cvlistitem{Co-ordinator at EPICS-2011, G H R C E, Nagpur.}
+\cvlistitem{Represented R. K. College, Madhubani in inter college table-tennis tournament (L. N. M. University,
+Darbhanga, Bihar) 2006.}
+
+\section{References}
+\begin{cvcolumns}
+	\cvcolumn{IITM}{\begin{itemize}\item Dr. Anil P.\item Dr. Aniruddhan S.\item Dr. P.K.Behera\end{itemize}}
+	\cvcolumn{DU}{\begin{itemize}\item Dr. Md. Naimuddin, \item Dr. Ashok K.\end{itemize}}
+	\cvcolumn[0.4]{All the rest \& some more}{\textit{Dr. S.B.Bodke (GHRCE)}, and \textit{Dr. Satyanarayna B. (TIFR)} }
+\end{cvcolumns}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{References}
+
+%\setlength{\columnsep}{+2cm}
+\begin{multicols}{2}
+	
+\cvitem{} {\href{https://scholar.google.com/citations?hl=en&user=ZZrN9q8AAAAJ}{\textbf{Dr. Mohammad Hossein Yaghmaee Moghaddam}}}
+\cvitem{} {Emails: \href{mailto:yaghmaee@ieee.org}{yaghmaee@ieee.org} | \href{mailto:hyaghmae@ferdowsi.um.ac.ir}{hyaghmae@ferdowsi.um.ac.ir}}
+%\cvitem{}{\noindent\rule{131mm}{0.4pt}}
+
+%\cvitem{} {\href{http://behkamal.profcms.um.ac.ir}{\textbf{Dr. Behshid Behkamal}}}
+%\cvitem{} {Email: \href{mailto:behkamal@um.ac.ir}{behkamal@um.ac.ir}}
+
+\cvitem{} {\href{https://scholar.google.com/citations?hl=en&user=lWYGNMAAAAAJ}{\textbf{Dr. Saeid Abrishami}}}
+\cvitem{} {Email: \href{mailto:s-abrishami@um.ac.ir}{s-abrishami@um.ac.ir}}
+
+%\cvitem{}{\noindent\rule{131mm}{0.4pt}}
+
+\end{multicols}
+\cvitem{} {\href{https://scholar.google.com/citations?hl=en&user=UsoEbboAAAAJ}{\textbf{Dr. Haleh Amintoosi}}}
+\cvitem{} {Emails: \href{mailto:amintoosi@um.ac.ir}{amintoosi@um.ac.ir} | \href{mailto:h.amintoosi@gmail.com}{h.amintoosi@gmail.com} }
+
+
+
+%\cvitem{} {\textbf{Dr. Mohsen Asadi}}
+%\cvitem{} {Emails: \href{mailto:mohsen.asadi@um.ac.ir}{mohsen.asadi@um.ac.ir} | \href{mailto:mohsen.asadi62@gmail.com}{mohsen.asadi62@gmail.com}}
+%\cvitem{}{\noindent\rule{131mm}{0.4pt}}
+
+\end{document}
+
