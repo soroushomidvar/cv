@@ -52,14 +52,14 @@
 %\usepackage[scale=0.8,top=2cm]{geometry}
 %\usepackage[top=1cm, bottom=1cm, left=1cm, right=1cm]{geometry}
 %\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
-%\usepackage[scale=0.80,top=15mm,bottom=15mm]{geometry} %best
-\usepackage[scale=0.90,top=8mm,bottom=8mm]{geometry}
+\usepackage[scale=0.80,top=15mm,bottom=15mm]{geometry} %best
+%\usepackage[scale=0.90,top=8mm,bottom=8mm]{geometry} % second best
 
 \setlength{\hintscolumnwidth}{1.7cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
-\name{Soroush}{Omidvar Tehrani \hspace*{70pt}}
+\name{Soroush}{Omidvar Tehrani \vspace*{15pt}} %\hspace*{35pt}
 %\title{MSEE Application and Instrumentation}                               % optional, remove / comment the line if not wanted
 %{No. 21, Moallem 34 St., Moallem Blvd.}
 %\address{Mashhad}{Iran}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
@@ -79,7 +79,7 @@
 
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 
-%\photo[60pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the 
+\photo[60pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the 
 
 %picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Best way to predict the future is to create it.}                                 % optional, remove / comment the line if not wanted
@@ -111,16 +111,12 @@
 	%\cvitem{Birth Place}{Mashhad, Khorasan Province, Iran} 
 	%\cvitem{Birth Date}{10 April 1995}
 	\cvitem{Birth}{10 April 1995 - Mashhad,  Iran} 
-	\cvitem{Website}{\href{http://sesh.ir}{sesh.ir}}
+	\cvitem{Website}{\href{http://sesh.ir}{sesh.ir} | \href{http://omidvar.me}{omidvar.me}}
 	%\cvitem{Phone}{\href{tel:+989151255991}{+98 9151255991}}
 \end{multicols}
-
-
-\vspace{2pt}
-\hrule
-\vspace{2pt}
-				 
-
+%\vspace{1pt}
+	\dotfill %\hrule
+%\vspace{1pt}			 
 \section{Education}
 % arguments 3 to 6 can be left empty
 \cventry{2017--2020}{M.Sc. in Computer Engineering (Network branch)}{Department of Computer Engineering}{Ferdowsi University of Mashhad, Iran}{}{}
@@ -141,7 +137,9 @@
 %\cvitem{}{\textbf{IoT Security}}
 
 \section{Publications}
-\cvitem{2021}{\textbf{Filter Based Time-Series Anomaly Detection in AMI using AI Approaches}, Alireza Rahimi, Afshin Shahrestani, Sina Ramezani, Pedram Zamani, \textit{Soroush Omidvar Tehrani}, Mohammad Hossein Yaghmaee Moghaddam, Mohsen Asadi, \nth{5} International Conference on Internet of Things and Applications (IoT 2021), held in Isfahan, Iran}
+\cvitem{2021}{\textbf{Anomaly in Power Consumption} (in Persian), \textit{Soroush Omidvar Tehrani}, Mohammad Hossein Yaghmaee Moghaddam, Tolooe Majd, Iran, ISBN: 978-622-7605-38-9}
+
+\cvitem{2021}{\textbf{Filter Based Time-Series Anomaly Detection in AMI using AI Approaches}, Alireza Rahimi, Afshin Shahrestani, Sina Ramezani, Pedram Zamani, \textit{Soroush Omidvar Tehrani}, Mohammad Hossein Yaghmaee Moghaddam, \nth{5} International Conference on Internet of Things and Applications (IoT 2021), held in Isfahan, Iran}
 
 \cvitem{2020}{\textbf{Decision Tree based Electricity Theft Detection in Smart Grid}, \textit{Soroush Omidvar Tehrani}, Mohammad Hossein Yaghmaee Moghaddam, Mohsen Asadi, \nth{4} International Conference on Internet of Things and Applications, held in Mashhad, Iran}
 
@@ -159,6 +157,9 @@
 
 \section{ Honors}
 %\cvitem{2017}{Ranked in second place of B.Sc. grade average and M.Sc. entrance without university exam}
+
+\cvitem{2021}{Winner of the best M.Sc. IoT-related thesis award among all Iranian competitors in \nth{5} International Conference on Internet of Things and Applications}
+
 \cvitem{2020}{Ranked \nth{3} among M.Sc. Computer Engineering students} %graduated in the year 2020
 
 \cvitem{2019}{Winner of the best paper award in the High Performance Computing and Big Data Analytics (TopHPC) congress}
@@ -196,7 +197,7 @@
 
 %\section{Selected Academic Projects}
 \section{Selected Projects}
-\cvitem{2017--2019}{\textbf{Cryptocurrency mining and electricity theft detection}, Employer: Khorasan province electerical distribution company, Dr. Mohammad Hossein Yaghmaee Moghaddam, written with Spark, Python, php (Ongoing)}
+\cvitem{2019--2021}{\textbf{Cryptocurrency mining and electricity theft detection}, Employer: Khorasan province electerical distribution company, Dr. Mohammad Hossein Yaghmaee Moghaddam, written with Spark, Python, php (Ongoing)}
 
 \cvitem{2017--2019}{\textbf{Design and implementation of power usage smart metering system and consumption management methods based on received data}, As a M.Sc. Project infrastructure, Dr. Mohammad Hossein Yaghmaee Moghaddam and IoT team of IPPBX Lab, written with Java, C, php}
 
