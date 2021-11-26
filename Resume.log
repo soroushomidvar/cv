@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.27)  27 NOV 2021 01:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.27)  27 NOV 2021 02:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1039,7 +1039,7 @@ LaTeX Info: Redefining \nameref on input line 113.
 \openout4 = `Resume.out'.
 
 \makecvheadpicturebox=\box115
-<picture.png, id=59, 1357.07pt x 1612.0225pt>
+<picture.png, id=55, 1357.07pt x 1612.0225pt>
 File: picture.png Graphic file (type png)
 <use picture.png>
 Package pdftex.def Info: picture.png  used on input line 115.
@@ -1164,10 +1164,11 @@ Overfull \hbox (282.39542pt too wide) in paragraph at lines 216--216
 [][] 
  []
 
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 231.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 231.
+
+Overfull \hbox (225.48991pt too wide) in paragraph at lines 254--254
+[][] 
+ []
+
 
 Overfull \hbox (225.48991pt too wide) in paragraph at lines 255--255
 [][] 
@@ -1189,40 +1190,35 @@ Overfull \hbox (225.48991pt too wide) in paragraph at lines 258--258
  []
 
 
-Overfull \hbox (225.48991pt too wide) in paragraph at lines 259--259
-[][] 
- []
-
-
-Overfull \hbox (225.48991pt too wide) in paragraph at lines 261--261
+Overfull \hbox (225.48991pt too wide) in paragraph at lines 260--260
 [][] 
  []
 
 [2]
-Overfull \hbox (282.39542pt too wide) in paragraph at lines 321--321
+Overfull \hbox (282.39542pt too wide) in paragraph at lines 325--325
 [][] 
  []
 
 
-Overfull \hbox (282.39542pt too wide) in paragraph at lines 322--322
+Overfull \hbox (282.39542pt too wide) in paragraph at lines 326--326
 [][] 
  []
 
 
-Overfull \hbox (282.39542pt too wide) in paragraph at lines 328--328
+Overfull \hbox (282.39542pt too wide) in paragraph at lines 332--332
 [][] 
  []
 
 
-Overfull \hbox (282.39542pt too wide) in paragraph at lines 329--329
+Overfull \hbox (282.39542pt too wide) in paragraph at lines 333--333
 [][] 
  []
 
 
 AED: pageslts setting LastPage 
 [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 343.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 343.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 347.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 347.
 \c@pagesLTS.arabic.1.local.count=\count317
  
 AED: pageslts setting VeryLastPage via AfterLastShipout 
@@ -1234,19 +1230,19 @@ Package pageslts Info: Total number of pages is odd.
 
 
 (./Resume.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 343.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 343.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 347.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 347.
 Package rerunfilecheck Info: File `Resume.out' has not changed.
-(rerunfilecheck)             Checksum: 825F3A5254F0F2BDEBFBDBFDE87BBE4B;1585.
+(rerunfilecheck)             Checksum: 73E0A2E1E902AEB29835847B2DF920A9;1457.
  ) 
 Here is how much of TeX's memory you used:
- 24346 strings out of 480608
- 438178 string characters out of 5903630
+ 24314 strings out of 480608
+ 437727 string characters out of 5903630
  733218 words of memory out of 5000000
- 39683 multiletter control sequences out of 15000+600000
- 585015 words of font info for 87 fonts, out of 8000000 for 9000
+ 39664 multiletter control sequences out of 15000+600000
+ 574731 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,13n,60p,920b,373s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,13n,60p,920b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
 texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/20
 20/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/usr/local/texliv
@@ -1259,10 +1255,10 @@ nts/type1/public/lm/lmss8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/p
 ublic/lm/lmss9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lm
 ssbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsso10.pf
 b></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on Resume.pdf (3 pages, 1612235 bytes).
+Output written on Resume.pdf (3 pages, 1611906 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
- 127 compressed objects within 2 object streams
- 17 named destinations out of 1000 (max. 500000)
- 20090 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 142 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 16 named destinations out of 1000 (max. 500000)
+ 15474 words of extra memory for PDF output out of 17280 (max. 10000000)
 
