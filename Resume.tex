@@ -8,7 +8,8 @@
 
 \documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
-\usepackage{fontawesome}
+%\usepackage{fontawesome}
+\usepackage{fontawesome5} % Without Error
 \usepackage{multicol}
 \usepackage{vwcol} 
 
@@ -98,7 +99,7 @@
 
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 
-\photo[60pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the 
+%\photo[60pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the 
 
 %picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Best way to predict the future is to create it.}                                 % optional, remove / comment the line if not wanted
@@ -130,7 +131,7 @@
 	%\cvitem{Birth Place}{Mashhad, Khorasan Province, Iran} 
 	%\cvitem{Birth Date}{10 April 1995}
 	\cvitem{Birth}{10 April 1995 - Mashhad,  Iran} 
-	\cvitem{Website}{\href{http://sesh.ir}{sesh.ir} | \href{http://omidvar.me}{omidvar.me}}
+	\cvitem{Website}{\href{http://sesh.ir}{sesh.ir}}
 	%\cvitem{Phone}{\href{tel:+989151255991}{+98 9151255991}}
 \end{multicols}
 \vspace{-13pt}
@@ -138,6 +139,7 @@
 %\vspace{1pt}			 
 \section{Education}
 % arguments 3 to 6 can be left empty
+\cventry{2022--2026}{Ph.D. in Computer Science}{Department of Computing Science}{University of Alberta, Canada (Ongoing)}{}{}
 \cventry{2017--2021}{M.Sc. in Computer Engineering (Network branch)}{Department of Computer Engineering}{Ferdowsi University of Mashhad, Iran}{}{}
 \setlength{\columnsep}{-1cm}
 \begin{multicols}{2}
@@ -151,7 +153,7 @@
 \cvitem{}{$\bullet$ Last 2 years GPA: 17.73/20 (3.69/4)}
 \end{multicols}
 \section{Research Interests}
-\cvitem{}{\textbf{Machine Learning} | \textbf{IoT-based Data Mining} | \textbf{Distributed Systems} }
+\cvitem{}{\textbf{Database} | \textbf{IoT-based Data Mining} | \textbf{Streaming Data} }
 %\cvitem{}{\textbf{Artificial Intelligence}}
 %\cvitem{}{\textbf{IoT Security}}
 
@@ -159,9 +161,11 @@
 
 \cvitem{2022}{\textbf{Online Electricity Theft Detection Framework For Large-Scale Smart Grid Data}, \textit{Soroush Omidvar Tehrani}, Afshin Shahrestani, Mohammad Hossein Yaghmaee Moghaddam, Electric Power Systems Research}
 
-\cvitem{2020}{\textbf{Decision Tree based Electricity Theft Detection in Smart Grid}, \textit{Soroush Omidvar Tehrani}, Mohammad Hossein Yaghmaee Moghaddam, Mohsen Asadi, \nth{4} International Conference on Internet of Things and Applications, held in Mashhad, Iran}
-
 \cvitem{2021}{\textbf{Filter Based Time-Series Anomaly Detection in AMI using AI Approaches}, Alireza Rahimi, Afshin Shahrestani, Sina Ramezani, Pedram Zamani, \textit{Soroush Omidvar Tehrani}, Mohammad Hossein Yaghmaee Moghaddam, \nth{5} International Conference on Internet of Things and Applications (IoT 2021), held in Isfahan, Iran}
+
+\cvitem{2021}{\textbf{Anomaly in Power Consumption} (in Persian), \textit{Soroush Omidvar Tehrani}, Mohammad Hossein Yaghmaee Moghaddam, ISBN: 978-622-7605-38-9, Tolooe Majd, Iran}
+
+\cvitem{2020}{\textbf{Decision Tree based Electricity Theft Detection in Smart Grid}, \textit{Soroush Omidvar Tehrani}, Mohammad Hossein Yaghmaee Moghaddam, Mohsen Asadi, \nth{4} International Conference on Internet of Things and Applications, held in Mashhad, Iran}
 
 
 \cvitem{2019}{\textbf{Extracting Effective Features for Descriptive Analysis of Household Energy Consumption using Smart Home Data},Hadise Moradi, \textit{Soroush Omidvar Tehrani}, Behshid Behkamal, Haleh Amintoosi, High Performance Computing and Big Data Analytics Congress, held in Tehran, Iran}
@@ -170,19 +174,19 @@
 %\cvitem{}{\noindent\rule{131mm}{0.4pt}}
 %\cvitem{}{\noindent\rule{131mm}{0.4pt}}
 
-\cvitem{2018}{\textbf{FUMBOT: Design, Implementation and Detection}, \textit{Soroush Omidvar Tehrani}, Haleh Amintoosi, \nth{9} OIC-CERT Annual Conference \& \nth{4} Conference on Cyberspace Security Incidents and Vulnerabilities, held in Shiraz, Iran}
-%\cvitem{Abstract}{In recent years, different malware has been developed and become more and more sophisticated. Botnets are among newly-emerged malware which is primarily used to perform malicious activities and are an important threat for nowadays Internet users. Malware can be remotely controlled after their installation on the host, as the victim system is unable to ignore received commands. One of the characteristics of botnets is their hidden activity, which makes it difficult to detect their presence on the victim’s device. Botnets are generally used to perform numerous attacks such as spamming, Distributed Denial of Service -DDoS-, identity theft, etc. In this article, we present our FUMBOT botnet which a centralized botnet, able to perform DDoS attack and utilize the bots for extracting cryptocurrency. FUMBOT was implemented in Java and can evade typical intrusion detection schemes.}
-
-\cvitem{2021}{\textbf{Anomaly in Power Consumption} (in Persian), \textit{Soroush Omidvar Tehrani}, Mohammad Hossein Yaghmaee Moghaddam, ISBN: 978-622-7605-38-9, Tolooe Majd, Iran}
-
 \cvitem{2019}{\textbf{Analysis of electricity consumption in smart homes using time hierarchy} (in Persian), \textit{Soroush Omidvar Tehrani}, Hadise Moradi, Behshid Behkamal, Haleh Amintoosi,  \nth{3} International Conference on Internet of Things and Applications, held in Isfahan, Iran}
 %\cvitem{Abstract}{Recognition of consumption patterns has an essential role in power management, and analysis of devices behavior is an integral part of that. Finding the usage patterns of household users, the main part of power usage, could significantly improve power prediction and power management. In this paper, the resemblance of devices consumption in a smart home is analyzed using time hierarchy. Finding relations between various devices and patterns of their usage is the aim of this analysis. This process led to the discovery of meaningful and precise patterns among the consumption of different devices.}
 % \cite{omidvar2019IOT}
 
+\cvitem{2018}{\textbf{FUMBOT: Design, Implementation and Detection}, \textit{Soroush Omidvar Tehrani}, Haleh Amintoosi, \nth{9} OIC-CERT Annual Conference \& \nth{4} Conference on Cyberspace Security Incidents and Vulnerabilities, held in Shiraz, Iran}
+%\cvitem{Abstract}{In recent years, different malware has been developed and become more and more sophisticated. Botnets are among newly-emerged malware which is primarily used to perform malicious activities and are an important threat for nowadays Internet users. Malware can be remotely controlled after their installation on the host, as the victim system is unable to ignore received commands. One of the characteristics of botnets is their hidden activity, which makes it difficult to detect their presence on the victim’s device. Botnets are generally used to perform numerous attacks such as spamming, Distributed Denial of Service -DDoS-, identity theft, etc. In this article, we present our FUMBOT botnet which a centralized botnet, able to perform DDoS attack and utilize the bots for extracting cryptocurrency. FUMBOT was implemented in Java and can evade typical intrusion detection schemes.}
+
+
+
 \section{Languages}
-\cvitem{}{$\bullet$ English: \textbf{IELTS overall band score: 7} $\rightarrow$ L(8), R(6.5), W(6), S(6.5) \hspace{11mm} $\bullet$ Persian: Mother tongue}
+\cvitem{}{English: \textbf{IELTS overall band score: 7} $\rightarrow$ L(8), R(6.5), W(6), S(6.5)} % \hspace{11mm} $\bullet$ Persian: Mother tongue}
 
-
+\cvitem{}{Persian: Mother tongue}
 \section{ Honors}
 
 \cvitem{2021}{Winner of the \textbf{best M.Sc. IoT-related thesis award} among all Iranian competitors in \nth{5} International Conference on Internet of Things and Applications}
@@ -239,13 +243,14 @@
 
 \section{Selected Teaching Experiences}
 %\subsection{Regular}
-\cventry{2015--2020}{The Theory of Formal Languages and Automata}{Teacher Assistant and Project Supervisor}{Department of Computer Engineering}{}{Supervised by Dr. Abdorreza Savadi (2015-2020), Dr. Saeid Abrishami (2018,2019) }
+\cventry{2022}{File and Database Management}{Teacher Assistant}{Department of Computing Science, University of Alberta}{}{Supervised by: Dr. Davood Rafiei}
+\cventry{2015--2020}{The Theory of Formal Languages and Automata}{Teacher Assistant and Project Supervisor}{Department of Computer Engineering, Ferdowsi University of Mashhad}{}{Supervised by Dr. Abdorreza Savadi (2015-2020), Dr. Saeid Abrishami (2018,2019) }
 %\cventry{Fall 2019}{Assistant in Computer Networks}{}{Ferdowsi University of Mashhad, Iran}{}{}
-\cventry{2019--2020}{Computer Networking}{Teacher Assistant and Project Supervisor}{Department of Computer Engineering}{}{Supervised by: Eng. Farnad Ahangari}
-\cventry{2017}{Artificial Intelligence}{Teacher Assistant and Project Supervisor}{Department of Computer Engineering}{}{Supervised by: Dr. Ahad Harati}
-\cventry{2016}{Fundamentals of Compiler Design}{Teacher Assistant and Project Supervisor}{Department of Computer Engineering}{}{Supervised by: Dr. Haleh Amintoosi}
-\cventry{2015}{Digital System Design}{Project Supervisor}{Department of Computer Engineering}{}{Supervised by: Dr. Mariam Zomorodi Moghadam}
-\cventry{2014}{Discrete Mathematics}{Teacher Assistant}{Department of Computer Engineering}{}{Supervised by: Dr. Mostafa Nouri Baygi}
+\cventry{2019--2020}{Computer Networking}{Teacher Assistant and Project Supervisor}{Department of Computer Engineering, Ferdowsi University of Mashhad}{}{Supervised by: Eng. Farnad Ahangari}
+\cventry{2017}{Artificial Intelligence}{Teacher Assistant and Project Supervisor}{Department of Computer Engineering, Ferdowsi University of Mashhad}{}{Supervised by: Dr. Ahad Harati}
+\cventry{2016}{Fundamentals of Compiler Design}{Teacher Assistant and Project Supervisor}{Department of Computer Engineering, Ferdowsi University of Mashhad}{}{Supervised by: Dr. Haleh Amintoosi}
+\cventry{2015}{Digital System Design}{Project Supervisor}{Department of Computer Engineering, Ferdowsi University of Mashhad}{}{Supervised by: Dr. Mariam Zomorodi Moghadam}
+\cventry{2014}{Discrete Mathematics}{Teacher Assistant}{Department of Computer Engineering, Ferdowsi University of Mashhad}{}{Supervised by: Dr. Mostafa Nouri Baygi}
 
 
 \section{Related Courses}
@@ -267,7 +272,7 @@
 
 %\section{Selected Academic Projects}
 \section{Selected Projects}
-\cvitem{2019--2021}{\textbf{Cryptocurrency mining and electricity theft detection}, Employer: Khorasan province electerical distribution company, Dr. Mohammad Hossein Yaghmaee Moghaddam, written with Spark, Python, php (Ongoing)}
+\cvitem{2019--2021}{\textbf{Cryptocurrency mining and electricity theft detection}, Employer: Khorasan province electerical distribution company, Dr. Mohammad Hossein Yaghmaee Moghaddam, written with Spark, Python, php}
 
 \cvitem{2017--2019}{\textbf{Design and implementation of power usage smart metering system and consumption management methods based on received data}, As a M.Sc. Project infrastructure, Dr. Mohammad Hossein Yaghmaee Moghaddam and IoT team of IPPBX Lab, written with Java, C, php}
 
@@ -283,11 +288,12 @@
 
 \cvitem{2016}{\textbf{Developing an Android program that searches between various news sites and sends related news based on your interest}, Course: Android Programming, Dr. Samad Paydar, written with Java}
 
-\cvitem{2015-2018}{\textbf{Implementing several language recognition programs based on ANTLR}, Course: The Theory of Formal Languages and Automata, Dr. Abdorreza Savadi, written with Antlr}
+\cvitem{2015--2018}{\textbf{Implementing several language recognition programs based on ANTLR}, Course: The Theory of Formal Languages and Automata, Dr. Abdorreza Savadi, written with Antlr}
 
 
 
 \section{Memberships}
+\cvitem{2022}{DB Lab, Department of Computing Science, University of Alberta. (Ongoing)}
 \cvitem{2019 - 2022}{IPPBX Lab, Department of Computer Engineering, Ferdowsi University of Mashhad.}
 \cvitem{2016 - 2019}{CCL Lab, Department of Computer Engineering, Ferdowsi University of Mashhad.}
 
@@ -322,8 +328,8 @@ Darbhanga, Bihar) 2006.}
 \setlength{\columnsep}{+2cm}
 \begin{multicols}{2}
 	
-\cvitem{} {\href{https://scholar.google.com/citations?hl=en&user=ZZrN9q8AAAAJ}{\textbf{Dr. Mohammad Hossein Yaghmaee Moghaddam}}}
-\cvitem{} {Emails: \href{mailto:yaghmaee@ieee.org}{yaghmaee@ieee.org} | \href{mailto:hyaghmae@ferdowsi.um.ac.ir}{hyaghmae@ferdowsi.um.ac.ir}}
+\cvitem{} {\href{https://scholar.google.ca/citations?user=lNxSDIwAAAAJ&hl=en}{\textbf{Dr. Davood Rafiei}}}
+\cvitem{} {Email: \href{mailto:drafiei@cs.ualberta.ca}{drafiei@cs.ualberta.ca}}
 %\cvitem{}{\noindent\rule{131mm}{0.4pt}}
 
 %\cvitem{} {\href{http://behkamal.profcms.um.ac.ir}{\textbf{Dr. Behshid Behkamal}}}
@@ -335,8 +341,22 @@ Darbhanga, Bihar) 2006.}
 %\cvitem{}{\noindent\rule{131mm}{0.4pt}}
 
 \end{multicols}
+\begin{multicols}{2}
+	
+\cvitem{} {\href{https://scholar.google.com/citations?hl=en&user=ZZrN9q8AAAAJ}{\textbf{Dr. Mohammad Hossein Yaghmaee Moghaddam}}}
+\cvitem{} {Emails: \href{mailto:yaghmaee@ieee.org}{yaghmaee@ieee.org} | \href{mailto:hyaghmae@ferdowsi.um.ac.ir}{hyaghmae@ferdowsi.um.ac.ir}}
+%\cvitem{}{\noindent\rule{131mm}{0.4pt}}
+
+%\cvitem{} {\href{http://behkamal.profcms.um.ac.ir}{\textbf{Dr. Behshid Behkamal}}}
+%\cvitem{} {Email: \href{mailto:behkamal@um.ac.ir}{behkamal@um.ac.ir}}
+
 \cvitem{} {\href{https://scholar.google.com/citations?user=GeJiC9QAAAAJ}{\textbf{Dr. Abdorreza Savadi}}}
 \cvitem{} {Email: \href{mailto:savadi@um.ac.ir}{savadi@um.ac.ir}}
+
+%\cvitem{}{\noindent\rule{131mm}{0.4pt}}
+
+\end{multicols}
+
 
 
 
