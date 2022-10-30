@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.5.11)  23 OCT 2022 23:49
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.5.11)  30 OCT 2022 14:23
  restricted system commands enabled.
 **Resume.tex
 (./Resume.tex
@@ -1308,7 +1308,7 @@ Awesome5Brands-Regular-400.otf></usr/local/texlive/2022/texmf-dist/fonts/opentyp
 e/public/lm/lmsans10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opent
 ype/public/lm/lmsans17-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Resume.pdf (3 pages, 54566 bytes).
+Output written on Resume.pdf (3 pages, 54573 bytes).
 
 PDF statistics: 162 PDF objects out of 1000 (max. 8388607)
  130 compressed objects within 2 object streams
